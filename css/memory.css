@@ -1,0 +1,119 @@
+body {
+    background-color: $white;
+    background-image: url(images/_geometryBG.jpg);
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    margin-left: auto;      
+    margin-right: auto;
+}
+/*Game Board*/
+.container {
+	width:440px;
+	height: 1000px;
+	position: absolute;
+	left: calc(50% - 220px);
+	top: calc(52% - 220px);
+	perspective: 500px;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	float: left;
+	transform: rotateY(0);
+	transform-style: preserve-3d;
+	transition: 500ms;
+}
+
+.box.flip {
+	transform: rotateY(180deg);
+}
+
+.card {
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-position: center;
+	background-repeat: no-repeat;
+	backface-visibility: hidden;
+	position: absolute;
+}
+.front {
+	
+	background-image: url(images/img-0.png);
+}
+.back {
+	transform: rotateY(180deg);
+}
+
+
+/*CARDS*/
+
+.card-1 {
+	/*background-color: grey;*/
+	background-image: url(images/img-1.png);
+}
+.card-2 {
+	/*background-color: silver;*/
+	background-image: url(images/img-2.png);
+}
+.card-3 {
+	/*background-color: maroon;*/
+	background-image: url(images/img-3.png);
+}
+.card-4 {
+	/*background-color: red;*/
+	background-image: url(images/img-4.png);
+}
+.card-5 {
+	/*background-color: orange;*/
+	background-image: url(images/img-5.png);
+}
+.card-6 {
+	/*background-color: yellow;*/
+	background-image: url(images/img-6.png);
+}
+.card-7 {
+	/*background-color: green;*/
+	background-image: url(images/img-7.png);
+}
+.card-8 {
+	/*background-color: teal;*/
+	background-image: url(images/img-8.png);
+}
+.card-9 {
+	/*background-color: lime;*/
+	background-image: url(images/img-9.png);
+}
+.card-10 {
+	/*background-color: blue;*/
+	background-image: url(images/img-10.png);
+}
+.card-11 {
+	/*background-color: purple;*/
+	background-image: url(images/img-11.png);
+}
+.card-12 {
+	/*background-color: white;*/
+	background-image: url(images/img-12.png);
+}
+ button{
+ 	font-size: 20px;
+ 	padding: 0.5em;
+ }
+ 
+
+/*@media only screen and (max-width: 500px) {
+    .container {
+    width: 439px;
+    height: 1000px;
+    position: absolute;
+    left: calc(50% - 175px);
+    top: calc(55% - 218px);
+    perspective: 495px;
+}
+}*/
+
+
